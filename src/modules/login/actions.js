@@ -5,3 +5,9 @@ export const formChange = ({ name, value }) => dispatch => {
     value,
   });
 };
+
+export const onSubmit = () => dispatch => {
+  dispatch({
+    type: 'ON_SUBMIT',
+  });
+};

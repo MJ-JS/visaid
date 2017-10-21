@@ -19,6 +19,13 @@ const reducer = (state = initialState, action) => {
       };
     }
 
+    case 'ON_SUBMIT': {
+      return {
+        ...state,
+        loggedIn: true,
+      };
+    }
+
     default:
       return state;
   }
